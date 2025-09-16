@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to shivshinde.blog</title>
+  <meta name="description" content="Welcome to shivshinde.blog — notes, projects, and tutorials." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+  <!-- Correct CSS path -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <div class="spark" aria-hidden="true"></div>
+
+    <span class="badge" aria-label="Site status">
+      <span>🟢</span> Live • shivshinde.blog
+    </span>
+
+    <h1 id="title">Welcome to <span class="highlight">shivshinde.blog</span></h1>
+    <p class="lead">
+      Personal notes, AWS/DevOps projects, and tutorials — all in one place.
+    </p>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="/" aria-label="Go to homepage">Explore</a>
+      <a class="btn btn-ghost" href="mailto:hello@shivshinde.blog" aria-label="Send me an email">Contact</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/shiv-shinde-1919" target="_blank" rel="noopener" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+    </div>
+
+    <section class="grid" aria-label="Highlights">
+      <article class="tile">
+        <h3>🚀 Projects</h3>
+        <p>ALB + ACM + EC2, S3 static hosting, CloudWatch dashboards, and more.</p>
+      </article>
+      <article class="tile">
+        <h3>🛠️ Tutorials</h3>
+        <p>Step-by-step guides for VPCs, RDS, Route 53, and load balancers.</p>
+      </article>
+      <article class="tile">
+        <h3>📓 Notes</h3>
+        <p>Quick cheatsheets for Linux, Git, and AWS CLI.</p>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="year"></span> shivshinde.blog • Built with ❤️ on AWS
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
