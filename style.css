@@ -1,4 +1,3 @@
-/* Page Layout */
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +8,6 @@ body {
   text-align: center;
 }
 
-/* Card Container */
 .card {
   width: 850px;
   max-width: 90%;
@@ -21,13 +19,11 @@ body {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
 }
 
-/* Profile Image */
 .profile-pic {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
   margin: 0 auto 18px;
   border: 3px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 25px rgba(0, 198, 255, 0.55);
@@ -39,7 +35,6 @@ body {
   box-shadow: 0 0 45px rgba(0, 198, 255, 0.75);
 }
 
-/* Headings */
 h1 {
   margin: 0;
   font-size: 30px;
@@ -52,7 +47,6 @@ h1 {
   color: #cdeaff;
 }
 
-/* Buttons */
 .resume-btn {
   display: inline-block;
   margin: 12px;
@@ -72,7 +66,6 @@ h1 {
   box-shadow: 0 0 25px rgba(255, 204, 0, 0.85);
 }
 
-/* Outline Buttons */
 .resume-btn.outline {
   background: transparent;
   color: #ffdd00;
@@ -80,13 +73,6 @@ h1 {
   box-shadow: none;
 }
 
-.resume-btn.outline:hover {
-  background: rgba(255, 221, 0, 0.15);
-  transform: translateY(-3px);
-  box-shadow: 0 0 22px rgba(255, 204, 0, 0.75);
-}
-
-/* Grid Section */
 .grid {
   margin-top: 35px;
   display: flex;
@@ -109,16 +95,13 @@ h1 {
   box-shadow: 0 0 30px rgba(0, 198, 255, 0.45);
 }
 
-/* Footer */
 footer {
   margin-top: 25px;
   font-size: 14px;
   color: #97c6d9;
 }
 
-/* ===================== RESPONSIVE DESIGN ===================== */
-
-/* Mobile Screens */
+/* Responsive */
 @media (max-width: 600px) {
 
   h1 {
@@ -151,17 +134,9 @@ footer {
   }
 }
 
-/* Tablets */
 @media (min-width: 600px) and (max-width: 900px) {
   .card {
     width: 600px;
     padding: 32px;
-  }
-}
-
-/* Large Screens */
-@media (min-width: 1200px) {
-  .card {
-    width: 900px;
   }
 }
