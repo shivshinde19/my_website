@@ -1,4 +1,4 @@
-/* Background and Page Layout */
+/* Page Layout */
 body {
   margin: 0;
   padding: 0;
@@ -9,28 +9,28 @@ body {
   text-align: center;
 }
 
-/* Main Container Card */
+/* Card Container */
 .card {
-  width: 450px;
+  width: 850px;
+  max-width: 90%;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
-  padding: 35px;
-  border-radius: 18px;
+  padding: 40px;
   margin: 60px auto;
-  text-align: center;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
 }
 
 /* Profile Image */
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin: 0 auto 18px;
   border: 3px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 25px rgba(0, 198, 255, 0.45);
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.55);
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
@@ -42,21 +42,20 @@ body {
 /* Headings */
 h1 {
   margin: 0;
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 30px;
   color: #e6faff;
 }
 
 .lead {
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 8px;
   color: #cdeaff;
 }
 
-/* Resume Button (Updated Colors) */
+/* Buttons */
 .resume-btn {
   display: inline-block;
-  margin-top: 20px;
+  margin: 12px;
   padding: 12px 26px;
   border-radius: 30px;
   background: linear-gradient(135deg, #ffdd00, #ffa600);
@@ -73,10 +72,46 @@ h1 {
   box-shadow: 0 0 25px rgba(255, 204, 0, 0.85);
 }
 
-/* Footer Text */
-.footer {
-  margin-top: 18px;
-  font-size: 13px;
+/* Outline Buttons */
+.resume-btn.outline {
+  background: transparent;
+  color: #ffdd00;
+  border: 2px solid #ffdd00;
+  box-shadow: none;
+}
+
+.resume-btn.outline:hover {
+  background: rgba(255, 221, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 0 22px rgba(255, 204, 0, 0.75);
+}
+
+/* Grid Section */
+.grid {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.tile {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 18px 22px;
+  border-radius: 14px;
+  width: 240px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 198, 255, 0.45);
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  font-size: 14px;
   color: #97c6d9;
-  opacity: 0.9;
 }
