@@ -115,3 +115,53 @@ footer {
   font-size: 14px;
   color: #97c6d9;
 }
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .lead {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  .resume-btn {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .tile {
+    width: 100%;
+  }
+
+  .card {
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .profile-pic {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 900px) {
+  .card {
+    width: 600px;
+    padding: 32px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .card {
+    width: 900px;
+  }
+}
