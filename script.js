@@ -139,14 +139,13 @@ function initHeroAnimation() {
 
   const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-  tl.to('.hero-badge',  { opacity: 1, y: 0, duration: 0.8 }, 0.3)
-    .to('.avatar-wrap', { opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.4)' }, 0.55)
-    .to('.hero-name',   { opacity: 1, y: 0, duration: 0.8 }, 0.75)
-    .to('.hero-role',   { opacity: 1, y: 0, duration: 0.7 }, 0.9)
-    .to('.hero-desc',   { opacity: 1, y: 0, duration: 0.7 }, 1.0)
-    .to('.hero-stats',  { opacity: 1, y: 0, duration: 0.7 }, 1.1)
-    .to('.hero-btns',   { opacity: 1, y: 0, duration: 0.7 }, 1.2)
-    .to('.scroll-down', { opacity: 1, duration: 0.6 }, 1.5);
+  tl.to('.avatar-wrap', { opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.4)' }, 0.3)
+    .to('.hero-name',   { opacity: 1, y: 0, duration: 0.8 }, 0.55)
+    .to('.hero-role',   { opacity: 1, y: 0, duration: 0.7 }, 0.7)
+    .to('.hero-desc',   { opacity: 1, y: 0, duration: 0.7 }, 0.8)
+    .to('.hero-stats',  { opacity: 1, y: 0, duration: 0.7 }, 0.9)
+    .to('.hero-btns',   { opacity: 1, y: 0, duration: 0.7 }, 1.0)
+    .to('.scroll-down', { opacity: 1, duration: 0.6 }, 1.3);
 
   // set initial states
   gsap.set(['.hero-name', '.hero-role', '.hero-desc', '.hero-stats', '.hero-btns'], { y: 36 });
